@@ -1,0 +1,59 @@
+ERROR - 2025-01-10 08:32:59 --> ErrorException: pg_query(): Query failed: ERROR:  relasi « sspelayanan » tidak ada
+LINE 2: FROM &quot;sspelayanan&quot;
+             ^ in D:\xampp\htdocs\admin_peluit\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136)
+#1 D:\xampp\htdocs\admin_peluit\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\admin_peluit\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\admin_peluit\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\xampp\htdocs\admin_peluit\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#8 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\admin_peluit\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-01-10 08:32:59 --> pg_query(): Query failed: ERROR:  relasi « sspelayanan » tidak ada
+LINE 2: FROM &quot;sspelayanan&quot;
+             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136)
+#1 D:\xampp\htdocs\admin_peluit\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\admin_peluit\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\admin_peluit\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\xampp\htdocs\admin_peluit\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#8 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\admin_peluit\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2025-01-10 09:14:27 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database � db_sspeluit � tidak ada
+CRITICAL - 2025-01-10 09:14:27 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database � db_sspeluit � tidak ada
+#0 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 D:\xampp\htdocs\admin_peluit\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\admin_peluit\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\xampp\htdocs\admin_peluit\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\admin_peluit\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-10 09:14:30 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database � db_sspeluit � tidak ada
+CRITICAL - 2025-01-10 09:14:30 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database � db_sspeluit � tidak ada
+#0 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\admin_peluit\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 D:\xampp\htdocs\admin_peluit\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\admin_peluit\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 D:\xampp\htdocs\admin_peluit\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\admin_peluit\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\admin_peluit\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
